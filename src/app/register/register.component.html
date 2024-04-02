@@ -1,0 +1,34 @@
+<div *ngIf="form">
+  <form [formGroup]="form">
+
+    <label>name : {{form.controls['name'].value}}</label> <br>
+    <input [ngClass]="{'red':form.controls['name'].errors}" type="text" formControlName="name"> <br> <br>
+
+    <label>lastname : {{form.controls['lname'].value}}</label> <br>
+    <input [ngClass]="{'red':form.controls['lname'].errors}" type="text" formControlName="lname"> <br> <br>
+
+    <label>nickname : {{form.controls['nname'].value}}</label> <br>
+    <input [ngClass]="{'red':form.controls['nname'].errors}" type="text" formControlName="nname"> <br> <br>
+
+    <label>id : {{form.controls['id'].value}}</label> <br>
+    <input [ngClass]="{'red':form.controls['id'].errors}" type="text" formControlName="id"> <br> <br>
+
+    <label>phone : {{form.controls['phone'].value}}</label> <br>
+    <input [ngClass]="{'red':form.controls['phone'].errors}" type="text" formControlName="phone">
+
+    
+
+
+    <!-- <div>{{form.controls['name'].errors | json}}</div> -->
+
+   
+
+    
+  </form>
+</div>
+
+<app-box-details [item]="form?.value" (resultData)="handleResult($event)"></app-box-details>
+
+<button (click)="returnData('eieieiei')">return</button>
+
+<!-- <router-outlet></router-outlet> -->
