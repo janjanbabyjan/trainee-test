@@ -10,6 +10,8 @@ import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { BoxDetailsComponent } from './box-details/box-details.component';
+import { ShowOutputComponent } from './show-output/show-output.component';
+// import { ShowOutputComponent } from './show-output/show-output.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { BoxDetailsComponent } from './box-details/box-details.component';
     DetailsComponent,
     HomeComponent,
     BoxDetailsComponent,
+    ShowOutputComponent,
+    // ShowOutputComponent,
   ],
   imports: [
     BrowserModule,

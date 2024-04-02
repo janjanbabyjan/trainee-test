@@ -5,14 +5,18 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   templateUrl: './box-details.component.html',
   styleUrls: ['./box-details.component.scss']
 })
-export class BoxDetailsComponent implements OnInit {
-  @Input() item: object | undefined
-  @Output() resultData = new EventEmitter<any>()
 
+
+export class BoxDetailsComponent implements OnInit {
+
+  @Input() item: any
+  @Output() resultData = new EventEmitter<any>()
+  interview: object | undefined;
   ngOnInit(): void {
     console.log(this.item)
   }
   returnData(name: string) {
     this.resultData.emit({ firstName: "Hellowwwww" })
   }
+
 }

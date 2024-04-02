@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-details',
@@ -14,7 +14,6 @@ export class DetailsComponent {
     tel: '094-3734085',
     email: 'Supattra.pa@kkumail.com',
     git: 'janjanbabyjan'
-    
   }
 
   resultComponent(event: any) {

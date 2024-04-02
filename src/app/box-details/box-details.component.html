@@ -1,3 +1,16 @@
-<div>{{item | json}}</div>
+<div class="container">
+    <section class="about-me">
+        <h1>About Me</h1>
+        <img src="https://preview.redd.it/funny-pix-of-my-dog-when-he-waits-outside-of-the-bathroom-v0-3yveaxbv8r0a1.jpg?width=640&crop=smart&auto=webp&s=30942ae6d07f7934583d24c1b5706770c3283902"
+            alt="Profile Picture" class="profile-picture">
+        <p>My name is {{item.firstName}} {{item.lastName}}</p>
+        <p>My nickname is {{item.nickName}}</p>
+        <h2>Contact Me</h2>
 
-<!-- <button (click)="returnData('55555')">return</button> -->
+        <ul class="social-media">
+            <li>Tel : <span>{{item.tel}}</span></li>
+            <li>Email : <span>{{item.email}}</span></li>
+            <li>GitHub : <span>{{item.git}}</span></li>
+        </ul>
+    </section>
+</div>

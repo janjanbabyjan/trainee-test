@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .about-me {
+    text-align: center;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    .social-media {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
