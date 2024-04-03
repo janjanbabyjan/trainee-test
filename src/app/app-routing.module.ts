@@ -4,6 +4,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 import { RegisterComponent } from './register/register.component';
+// import { PageCrudComponent } from './page-crud/page-crud.component';
+import { CrudComponent } from './crud/crud.component';
+
 
 const routes: Routes = [
   {
@@ -23,7 +26,11 @@ const routes: Routes = [
   {
     path: 'details',
     component: DetailsComponent,
-  },
+  }, 
+  {
+    path: 'crud',
+    component: CrudComponent,
+  }, 
   {
     path: '**', redirectTo: 'home', pathMatch: 'full'
   }

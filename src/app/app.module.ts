@@ -11,6 +11,9 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { BoxDetailsComponent } from './box-details/box-details.component';
 import { ShowOutputComponent } from './show-output/show-output.component';
+import { PagecrudComponent } from './pagecrud/pagecrud.component';
+import { PageCrudComponent } from './page-crud/page-crud.component';
+import { CrudComponent } from './crud/crud.component';
 // import { ShowOutputComponent } from './show-output/show-output.component';
 
 @NgModule({
@@ -21,6 +24,9 @@ import { ShowOutputComponent } from './show-output/show-output.component';
     HomeComponent,
     BoxDetailsComponent,
     ShowOutputComponent,
+    PagecrudComponent,
+    PageCrudComponent,
+    CrudComponent,
     // ShowOutputComponent,
   ],
   imports: [
